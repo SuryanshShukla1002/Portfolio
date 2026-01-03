@@ -12,6 +12,30 @@ const ShowCaseSection = () => {
   const project3Ref = useRef(null);
 
   useGSAP(() => {
+    const projects = [
+      project1Ref.current,
+      project2Ref.current,
+      project3Ref.current,
+    ];
+    projects.forEach((card, index) => {
+      gsap.fromTo(
+        card,
+        {
+          y: 50,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: 0.3 * (index + 1),
+          scrollTrigger: {
+            trigger: card,
+            start: "top bottom-=100",
+          },
+        }
+      );
+    });
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
@@ -51,8 +75,8 @@ const ShowCaseSection = () => {
               <h2>Home Horizon - Real Estate Management Platform</h2>
             </div>
             <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#ffe7eb]">
-                <img src="/images/project3.png" alt="AI Expense Tracker App" />
+              <div className="image-wrapper bg-[#ffe7ebc3]">
+                <img src="/images/project3.jpeg" alt="AI Expense Tracker App" />
               </div>
               <h2>AI - Expense Tracker App</h2>
             </div>
