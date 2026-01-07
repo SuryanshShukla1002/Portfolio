@@ -49,9 +49,22 @@ const ShowCaseSection = () => {
         <div className="showcaselayout">
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project1Ref}>
-            <div className="image-wrapper">
+            <div className="image-wrapper relative">
+              {/* GitHub Button */}
+              <a
+                href="https://github.com/SuryanshShukla1002/dev-tinder-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-3 left-3 z-10"
+              >
+                <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition">
+                  View GitHub
+                </button>
+              </a>
+
               <img src="/images/project1.png" alt="Dev-tinder" />
             </div>
+
             <div className="text-content">
               <h2>
                 Developer Matchmaking platform Made Simple with a Powerful,
@@ -63,22 +76,48 @@ const ShowCaseSection = () => {
               </p>
             </div>
           </div>
+
           {/* RIGHT */}
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
-              <div className="image-wrapper bg-[#ffefdb]">
+              <div className="image-wrapper bg-[#ffefdb] relative">
+                {/* GitHub Button */}
+                <a
+                  href="https://github.com/SuryanshShukla1002/MERN-Real-Estate-Marketplace-Platform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-3 left-3 z-10"
+                >
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition">
+                    View GitHub
+                  </button>
+                </a>
+
                 <img
-                  src="/images/project2.png"
+                  src="/images/project21.jpg"
                   alt="Real Estate Management platform"
                 />
               </div>
               <h2>Home Horizon - Real Estate Management Platform</h2>
             </div>
+
             <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#ffe7ebc3]">
-                <img src="/images/project3.jpeg" alt="AI Expense Tracker App" />
+              <div className="image-wrapper bg-[#ffe7ebc3] relative">
+                {/* GitHub Button */}
+                <a
+                  href="https://github.com/SuryanshShukla1002/Anvaya-CRM-Frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-3 left-3 z-10"
+                >
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition">
+                    View GitHub
+                  </button>
+                </a>
+
+                <img src="/images/project4.png" alt="Avanya" />
               </div>
-              <h2>AI - Expense Tracker App</h2>
+              <h2>Avanya - Lead Management CRM</h2>
             </div>
           </div>
         </div>
@@ -86,4 +125,5 @@ const ShowCaseSection = () => {
     </section>
   );
 };
+
 export default ShowCaseSection;
