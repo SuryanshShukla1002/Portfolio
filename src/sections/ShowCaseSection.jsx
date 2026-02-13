@@ -33,13 +33,13 @@ const ShowCaseSection = () => {
             trigger: card,
             start: "top bottom-=100",
           },
-        }
+        },
       );
     });
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
+      { opacity: 1, duration: 1.5 },
     );
   }, []);
 
@@ -57,7 +57,7 @@ const ShowCaseSection = () => {
                 rel="noopener noreferrer"
                 className="absolute bottom-3 left-3 z-10"
               >
-                <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition">
+                <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition cursor-pointer">
                   View GitHub
                 </button>
               </a>
@@ -88,7 +88,7 @@ const ShowCaseSection = () => {
                   rel="noopener noreferrer"
                   className="absolute bottom-3 left-3 z-10"
                 >
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition cursor-pointer">
                     View GitHub
                   </button>
                 </a>
@@ -105,19 +105,19 @@ const ShowCaseSection = () => {
               <div className="image-wrapper bg-[#ffe7ebc3] relative">
                 {/* GitHub Button */}
                 <a
-                  href="https://github.com/SuryanshShukla1002/Anvaya-CRM-Frontend"
+                  href="https://github.com/SuryanshShukla1002/Workasana"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute bottom-3 left-3 z-10"
                 >
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-black/70 backdrop-blur-md rounded-lg hover:bg-black transition cursor-pointer">
                     View GitHub
                   </button>
                 </a>
 
-                <img src="/images/project4.png" alt="Avanya" />
+                <img src="/images/project5.png" alt="Avanya" />
               </div>
-              <h2>Avanya - Lead Management CRM</h2>
+              <h2>Workasana - Task Management App</h2>
             </div>
           </div>
         </div>

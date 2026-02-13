@@ -19,7 +19,7 @@ const Hero = () => {
         stagger: 0.2,
         duration: 1,
         ease: "power2.inOut",
-      }
+      },
     );
   });
   return (
@@ -70,7 +70,7 @@ const Hero = () => {
         </header>
         {/* Right 3D Model */}
         <figure>
-          <div className="hero-3d-layout">
+          <div className="hero-3d-layout pointer-events-none md:pointer-events-auto">
             <HeroExperience />
           </div>
         </figure>
