@@ -105,7 +105,7 @@ const ShowCaseSection = () => {
               <div className="image-wrapper bg-[#ffe7ebc3] relative">
                 {/* GitHub Button */}
                 <a
-                  href="https://github.com/SuryanshShukla1002/Workasana"
+                  href="https://github.com/SuryanshShukla1002/Expense-Tracker-AI"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute bottom-3 left-3 z-10"
@@ -115,9 +115,9 @@ const ShowCaseSection = () => {
                   </button>
                 </a>
 
-                <img src="/images/project5.png" alt="Avanya" />
+                <img src="/images/project3.jpeg" alt="Expense Tracker" />
               </div>
-              <h2>Workasana - Task Management App</h2>
+              <h2>AI Expense Tracker</h2>
             </div>
           </div>
         </div>
